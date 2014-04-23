@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Conceal</title>
+
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Mitchell Kember">
+	<meta name="description" content="A word search generator.">
+	<meta name="keywords" content="word, search, wordsearch, puzzle">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="no-print">
+		<a id="fork-me" href="https://github.com/mk12/conceal">Fork me on GitHub</a>
+		<h1>Conceal</h1>
+		<p>Word search generator.</p>
+		<div id="top">
+			<form action="" onsubmit="conceal.core.submit(); return false;">
+				<input id="words" type="text" placeholder="Enter space-separated words" autofocus required>
+				<fieldset id="dimensions">
+					<input id="rows" type="number" value="10" required>
+					<label>&times;</label>
+					<input id="cols" type="number" value="10" required>
+				</fieldset>
+				<input id="generate" type="submit" value="Generate">
+			</form>
+			<p id="message" style="display: none"></p>
+		</div>
+	</div>
+	<table></table>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import 'reset.css';
+
+body {
+	text-align: center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 16pt;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	#fork-me {
+		background-image: url('https://github.com/philwareham/github-ribbons-retina/raw/master/fork-me@2x.png') !important;
+		background-size: 140px 140px;
+	}
+}
+
+@media only print {
+	.no-print {
+		display: none !important;
+	}
+}
+
+#fork-me {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+	width: 140px;
+	height: 140px;
+	text-indent: -9999px;
+	background-image: url('https://github.com/philwareham/github-ribbons-retina/raw/master/fork-me.png');
+}
+
+body {
+	padding: 5px;
+}
+
+h1 {
+	line-height: 2em;
+	font-weight: bold;
+	font-size: 2em;
+	text-rendering: optimizeLegibility;
+}
+
+#top {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	max-width: 500px;
+	margin: 2em auto;
+}
+
+form {
+	height: 150px;
+	padding: 20px;
+}
+
+p#message {
+	border-top: 1px solid #ccc;
+	padding: 0.5em 0;
+}
+
+input, label {
+	font-size: 16pt;
+}
+
+input.error {
+	color: #c00;
+}
+
+input#words {
+	width: 90%;
+	height: 30px;
+	padding: 3px 10px;
+	margin-bottom: 15px;
+}
+
+#dimensions input {
+	width: 55px;
+	height: 30px;
+}
+
+#generate {
+	margin: 20px 0;
+	width: 200px;
+	height: 40px;
+	background: #eee;
+	border: 1px solid #888;
+}
+
+#generate:active {
+	background: #ccc;
+}
+
+table {
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+td {
+	border: 1px solid #ccc;
+	width: 25px;
+	height: 25px;
+	padding: 5px;
+}
